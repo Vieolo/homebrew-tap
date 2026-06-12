@@ -5,21 +5,21 @@
 class Detctl < Formula
   desc "The control plane of deterministic skills for AI agents"
   homepage "https://github.com/vieolo/detctl"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Vieolo/detctl/releases/download/v0.0.1/detctl_Darwin_x86_64.tar.gz"
-      sha256 "ab82486196c3f57ff409acbfa7681bb19df51ad7177a263e3888fbf6228bb72a"
+      url "https://github.com/Vieolo/detctl/releases/download/v0.0.2/detctl_Darwin_x86_64.tar.gz"
+      sha256 "dd23bff1676752e488bd1e35719d38c7cccb073c218d4aff4197bc589342afee"
 
       define_method(:install) do
         bin.install "detctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Vieolo/detctl/releases/download/v0.0.1/detctl_Darwin_arm64.tar.gz"
-      sha256 "344a8fd9f1e1e6a0d31fa1d12be6b2fd08d082be2cc13e12f39c8511e309917a"
+      url "https://github.com/Vieolo/detctl/releases/download/v0.0.2/detctl_Darwin_arm64.tar.gz"
+      sha256 "0c8618ffb2bf4564b915449838c24acd22b7352449137a453fff44d5b01f0d08"
 
       define_method(:install) do
         bin.install "detctl"
@@ -29,15 +29,15 @@ class Detctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vieolo/detctl/releases/download/v0.0.1/detctl_Linux_x86_64.tar.gz"
-      sha256 "0f6d3c04987b4d311419a654640aae1f40fde806be96801a2e224a7f7dd3049e"
+      url "https://github.com/Vieolo/detctl/releases/download/v0.0.2/detctl_Linux_x86_64.tar.gz"
+      sha256 "f5fe17eab5d1b45616e0c6872046e7f0de906a4a128bb61fb79b31c704258064"
       define_method(:install) do
         bin.install "detctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vieolo/detctl/releases/download/v0.0.1/detctl_Linux_arm64.tar.gz"
-      sha256 "9c97cce4ab1350ee84fe87909592763620173e3b4ea7783fd24f245268208498"
+      url "https://github.com/Vieolo/detctl/releases/download/v0.0.2/detctl_Linux_arm64.tar.gz"
+      sha256 "8ad9a531be536b14779899d189cdb094069e6224155095f5a5b6c462c407b749"
       define_method(:install) do
         bin.install "detctl"
       end
