@@ -5,21 +5,21 @@
 class Uch < Formula
   desc "Universal Command Helper — store, encrypt, and run your re-used terminal commands by nickname."
   homepage "https://github.com/vieolo/uch"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Vieolo/uch/releases/download/v0.2.0/uch_Darwin_x86_64.tar.gz"
-      sha256 "0cf0bdffb5d4971a2c057727e8ab8a7560c9fe1fcffef609c8cb492b3207f4e7"
+      url "https://github.com/Vieolo/uch/releases/download/v0.2.1/uch_Darwin_x86_64.tar.gz"
+      sha256 "69d76cea0013b32ba844333d4863858eb4c15002a36c4fca44ca6382ca660b20"
 
       define_method(:install) do
         bin.install "uch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Vieolo/uch/releases/download/v0.2.0/uch_Darwin_arm64.tar.gz"
-      sha256 "26d916f637e539063d38a91044d2e618b4d875bd76fcff6bad14ac865a95dc26"
+      url "https://github.com/Vieolo/uch/releases/download/v0.2.1/uch_Darwin_arm64.tar.gz"
+      sha256 "64684233119551459a07580a413f134106dec28c3f065dc0bee85e59bf69312d"
 
       define_method(:install) do
         bin.install "uch"
@@ -29,15 +29,15 @@ class Uch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vieolo/uch/releases/download/v0.2.0/uch_Linux_x86_64.tar.gz"
-      sha256 "9f50cfa2d724ca08b7257bf794a9176c5041e41a940ab8deded972551ba1c852"
+      url "https://github.com/Vieolo/uch/releases/download/v0.2.1/uch_Linux_x86_64.tar.gz"
+      sha256 "bf355d435b756b93cac8e8ec79574d1527033db438fccd33227747668ca2eec8"
       define_method(:install) do
         bin.install "uch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vieolo/uch/releases/download/v0.2.0/uch_Linux_arm64.tar.gz"
-      sha256 "8058b2b1ccc4b33945e9aeb7b14637549ea55ccc877dd466d6eb5b60353ab746"
+      url "https://github.com/Vieolo/uch/releases/download/v0.2.1/uch_Linux_arm64.tar.gz"
+      sha256 "3e85dce7a53ba1d0423e8f139707af625f74bee0cd30e6851c2603157d006194"
       define_method(:install) do
         bin.install "uch"
       end
