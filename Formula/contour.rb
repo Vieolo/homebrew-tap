@@ -5,21 +5,21 @@
 class Contour < Formula
   desc "Centralized context provider for AI agents"
   homepage "https://github.com/vieolo/contour"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Vieolo/contour/releases/download/v0.2.0/contour_Darwin_x86_64.tar.gz"
-      sha256 "382902c6e546f904deb15ca43df6ced440aa8c93afb5c44b00bfa7151aea85f3"
+      url "https://github.com/Vieolo/contour/releases/download/v0.2.1/contour_Darwin_x86_64.tar.gz"
+      sha256 "69f3055808b7339e65944c235ca67b575d13fcdb19ef2fa515a973b32e8be674"
 
       define_method(:install) do
         bin.install "contour"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Vieolo/contour/releases/download/v0.2.0/contour_Darwin_arm64.tar.gz"
-      sha256 "46112ae89a21016cdfe74588e5fde7b7147cac16311e79179a2ddc16d5fa2d66"
+      url "https://github.com/Vieolo/contour/releases/download/v0.2.1/contour_Darwin_arm64.tar.gz"
+      sha256 "8aba2f1ce00343d48a459eb75748695bc9e789046c5c96cbc9cf82279d47fcb8"
 
       define_method(:install) do
         bin.install "contour"
@@ -29,15 +29,15 @@ class Contour < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vieolo/contour/releases/download/v0.2.0/contour_Linux_x86_64.tar.gz"
-      sha256 "736d923edc22a03843de173cf35428abd81fba996790ce41453a703135bb97bf"
+      url "https://github.com/Vieolo/contour/releases/download/v0.2.1/contour_Linux_x86_64.tar.gz"
+      sha256 "a5743669539c8ad0de11c513e85d0fac8c19544b2087b03fc1b60ef64dc0a472"
       define_method(:install) do
         bin.install "contour"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Vieolo/contour/releases/download/v0.2.0/contour_Linux_arm64.tar.gz"
-      sha256 "6f811ecaa89c7c9a32aa84b448da1ba1b8f027b0678be5604f5b9ecdb458a965"
+      url "https://github.com/Vieolo/contour/releases/download/v0.2.1/contour_Linux_arm64.tar.gz"
+      sha256 "37e8657f7f62faaa00b098b09ac7f194aac83a705227f2bac4cfefd9bbc76a61"
       define_method(:install) do
         bin.install "contour"
       end
